@@ -1,4 +1,4 @@
-# FontChangeLib
+# QFontChangeLib
 内容阅读类客户端通常都有个功能——调整字体大小，这种功能说复杂也不复杂，但做起来还是费些时间的。本框架是基于代理View创建来支持多Activity调节字体大小的一个小功能，支持应用内多TextView的字体大小调节（**注意：不负责分辨率适配，调大了可能影响布局，不过好在一般这类需求都出现在列表之类可扩张的View内**）。整体设计逻辑与[QSkinLoader](https://github.com/qqliu10u/QSkinLoader)换肤框架相同，此处不再赘述。
 
 ----
