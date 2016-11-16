@@ -1,5 +1,5 @@
 # FontChangeLib
-内容阅读类客户端通常都有个功能——调整字体大小，这种功能说复杂也不复杂，但做起来还是费些时间的。本框架是基于代理View创建来支持多Activity调节字体大小的一个小功能，支持应用内多TextView的字体大小调节（**注意：不负责分辨率适配，调大了可能影响布局，不过好在一般这类需求都出现在列表之类可扩张的View内**）。整体设计逻辑与[QSkinLoader](http://blog.csdn.net/u013478336/article/details/53083054)换肤框架相同，此处不再赘述。
+内容阅读类客户端通常都有个功能——调整字体大小，这种功能说复杂也不复杂，但做起来还是费些时间的。本框架是基于代理View创建来支持多Activity调节字体大小的一个小功能，支持应用内多TextView的字体大小调节（**注意：不负责分辨率适配，调大了可能影响布局，不过好在一般这类需求都出现在列表之类可扩张的View内**）。整体设计逻辑与[QSkinLoader](https://github.com/qqliu10u/QSkinLoader)换肤框架相同，此处不再赘述。
 
 ----
 #一、效果图
@@ -7,11 +7,11 @@
 
 #二、使用方法
 ##2.1 XML集成
-1. 在XML文件根布局中增加命名空间
+在XML文件根布局中增加命名空间
 ```xml
 xmlns:skin="http://schemas.android.com/android/skin"
 ```
-2. 对需要支持字体大小调节的TextView（仅支持TextView）设置：
+对需要支持字体大小调节的TextView（仅支持TextView）设置：
 ```xml
 skin:enableFontChange="true"
 ```
@@ -150,4 +150,4 @@ FontManager.getInstance().applyFont(view, true);
 此时框架会对view及其子View内所有支持字体大小调节的TextView应用当前设置的字体大小。
 
 #三、总结
-好了，框架使用就讲完了，这个框架是QSkinLoader的一个简化版本的设计，本来想在QSkinLoader内直接支持此功能，但觉得两者虽做法类似，但目标不同，所以单独抽出了这个小框架，大家如果有需要可以下一个试试。github地址：https://github.com/qqliu10u/FontChangeLib.git
+好了，框架使用就讲完了，这个框架是QSkinLoader的一个简化版本的设计，本来想在QSkinLoader内直接支持此功能，但觉得两者虽做法类似，但目标不同，所以单独抽出了这个小框架，大家如果有需要可以下一个试试。
