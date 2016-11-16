@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 设置此属性标识TextView支持字体大小切换-->
+    <attr name="enableFontChange" format="boolean"/>
+</resources>

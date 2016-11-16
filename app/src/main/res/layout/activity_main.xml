@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#515151"
+        android:textSize="20sp"
+        android:text="Hello World!" />
+
+    <ListView
+        android:id="@+id/main_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#515151"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:text="小"/>
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#515151"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:text="标准"/>
+
+        <Button
+            android:id="@+id/btn_big"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#515151"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:text="大"/>
+
+        <Button
+            android:id="@+id/btn_biggest"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:textColor="#515151"
+            android:textSize="18sp"
+            android:onClick="onClick"
+            android:text="超大"/>
+    </LinearLayout>
+</LinearLayout>
